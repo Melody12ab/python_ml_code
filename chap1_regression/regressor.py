@@ -67,7 +67,7 @@ print("Mean absolute error =", round(sm.mean_absolute_error(Y_test, y_test_pred)
 print("Mean squared error =", round(sm.mean_squared_error(Y_test, y_test_pred), 2))
 # 中位数绝对误差 (median absolute error):所有数据点的误差的中位数  可以消除异常值的干扰，单个坏点数据不会影响整个误差指标
 print("Mean median error =", round(sm.median_absolute_error(Y_test, y_test_pred), 2))
-# 解释方差分(explained variance score):衡量模型对数据集波动的解释能力
+# 解释方差分(explained variance score):衡量模型对数据集波动的解释能力 如果等分为1则表明模型很好
 print("Explained variance score =", round(sm.explained_variance_score(Y_test, y_test_pred), 2))
 # R2 score R方得分：衡量模型对位置样本预测效果
 print("R2 score =", round(sm.r2_score(Y_test, y_test_pred), 2))
